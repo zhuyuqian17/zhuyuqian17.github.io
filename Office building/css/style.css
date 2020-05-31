@@ -1,0 +1,73 @@
+body {
+	margin: 0;
+	padding: 0;
+
+}
+
+.top {
+	background: gainsboro;
+	height: 100px;
+}
+
+.top1 {
+	margin-right: 20%;
+}
+
+.top1 li {
+	list-style: none;
+	display: inline-block;
+
+}
+
+#d1 {
+	padding: 0 6.25rem;
+}
+#d3{
+	border:1px solid #007AFF ;
+		background: gold;
+		border-radius:25px;
+	font-size:1.8rem ;
+}
+.top1 li a {
+	text-decoration: none;
+	position: relative;
+	color: #313131;
+	font-weight: 100%;
+	font-family: sans-serif;
+	display: block;
+	overflow: hidden;
+	transition: 0.7s all;
+	padding: 3px 12px;
+	text-transform: uppercase;
+}
+
+.top1 li a::before {
+	content: '';
+	position: absolute;
+	border-bottom: 8px solid #313131;
+	bottom: 0;
+	transition: 0.7s all;
+}
+
+/* .top1 li a:hover::before{
+ right: 0;
+} */
+.top1 li a:hover {
+	color: #368ab7 !important;
+	transform: scale(1.1);
+	transition: color 0.5s
+}
+
+#test {
+	margin: 0 auto;
+
+	position: relative;
+
+	width: 1000px;
+
+
+	overflow: hidden;
+
+	border: 1px solid #d4d4d4;
+
+}

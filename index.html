@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Swiper demo</title>
+<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+         <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+		<!-- Link Swiper's CSS -->
+		<link rel="stylesheet" href="../css/swiper.min.css">
+		<link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="../css/style.css">
+
+		<!-- Demo styles -->
+		<style>
+     html, body {
+      position: relative;
+      height: 100%;
+    }
+    body {
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color:#000;
+      margin: 0;
+      padding: 0;
+	  background-color: #EEEEEE;
+    }
+    .swiper-container {
+      width: 90%;
+      height: 100%;
+    }
+    .swiper-slide {
+      text-align: center;
+      background: #fff;
+
+      /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+    }
+	#z_swiper_con{
+		width:65%;
+		height: 92%;
+		margin: 0 0 0 3rem;
+		padding-top:3rem;
+	}
+	.Lun-body{
+		width: 80%;
+		height: 70%;
+		margin: 0 auto;
+		background-color: #000000;
+		display: flex;
+	}
+	.Lun-body-txt{
+		color:  #FFFFFF;
+	}
+	.Lun-body-txt #txt1{
+
+		padding-top: 5rem;
+		margin: 0 2.7rem;
+		font-size:2.6rem ;
+
+	}
+	#txt2{
+		font-size:2.2rem ;
+	}	
+	#txt3{
+		
+		margin: 1.25rem 2.7rem;
+		font-size:1.8rem ;
+	}
+	
+	#txt7{
+		margin: 1.25rem 2.7rem;
+		font-size:1.8rem ;
+	}
+	#txt8{
+		margin: 2rem 2.7rem;
+		font-size:1.8rem ;
+	}
+	#txt9{
+		
+		border:3px solid #5E5E5E ;
+			background: #5E5E5E;
+			width:260px;
+			border-radius:25px;
+		margin: 2rem 2.7rem;
+		font-size:1.8rem ;
+	}
+	#txt10{
+		border:2px solid #007AFF ;
+			background: #007AFF;
+			border-radius:25px;
+		margin: 2rem 2.7rem;
+		font-size:1.8rem ;
+	}
+	#txt-1{
+		margin: 1.25rem 2.7rem;
+		 border-bottom: solid 0.0625rem  #8C8C8C;
+	}
+	#txt-2{
+		margin: 1.25rem 2.7rem;
+	    border-bottom: solid 0.0625rem  #8C8C8C;
+	}
+	#txt5{
+		/* margin: 1.25rem 2.7rem; */
+		font-size:1.8rem ;
+	}
+	#txt6{
+		margin: 1.25rem 2.7rem;
+		font-size:1.8rem ;
+	}
+	.Loupan-txt{
+		        width: 80%;
+			
+		        margin: 0 auto;
+				border-right-style: solid;
+				border-left-style:solid ;
+				
+	}
+	.Loupan-txt-1{
+		border-style:solid;
+			margin: 0 2rem;
+			border:1px solid #a1a1a1;
+			border-radius:10px;
+	}
+	.Loupan-txt-3{
+		border-style:solid;
+			margin: 2rem 2rem;
+			border:1px solid #a1a1a1;
+			border-radius:10px;
+	}
+	#Loupan-txt-2{
+		 padding: 1rem 2.7rem;
+		 border-bottom: solid 0.0625rem  #8C8C8C;
+		 font-size: 2.6rem;
+		 background-color:#D4D4D4 ; 
+	}
+	#Loupan-txt-daohang{
+		margin: 1.25rem 2.7rem;
+		border-bottom: solid 0.0625rem   #007AFF;
+	}
+	
+	#Loupan-txt-daohang a:hover{
+	     color: #368ab7!important;
+		 transform: scale(1.1);
+		 transition: color 0.5s
+	}
+	.Loupan-txt-con3{
+		    border-style:solid;
+			margin: 3rem 2rem;
+			border:1px solid #a1a1a1;
+			border-radius:10px;
+	}
+	.Loupan-txt-con3 p{
+		margin: 1.875rem 0 0 30px;
+	} 
+	.Loupan-txt-con3 p:nth-child(1){
+		margin-left: 0px;
+		margin-top: 0px;
+	}
+	.Loupan-txt-con3 p span{
+		display: inline-block;
+		width: 33%;
+		
+		text-align: left;
+	}
+	#txt-3{
+		margin: 0 2rem;
+		font-size: 1.5rem;
+		line-height:200%
+	}
+	#txt-4{
+		color: #ADADAD;
+
+	}
+	#txt-5{
+     margin-top: 0px;
+	}
+	#txt-6{
+        color: #ADADAD;
+	}
+	#txt-7{
+     margin-top: 0px;
+	}
+	/* 百度地图 */
+	#bdd{
+		padding: 0 auto;
+	}
+	
+	.Loupan-txt-1 p span{
+		display: inline-block;
+		width: 17%;
+        margin: 0 4rem;
+	}
+	#heiti{
+		font-weight:bold;
+	}
+	#shijian_1{
+		margin:0 1rem ;
+		padding: 1.25rem;
+	}
+	#yewei_1{
+		background-color: #000000;
+		width: 100%;
+	}
+	#yewei_1 p {
+		font-weight: bold;
+		color: #BCE8F1;
+	}
+     .cont-e {
+    border: 1px solid #cccccc;
+    border-radius: 10px;
+   position: absolute:relative;left: 105rem;
+    padding: 10px;
+}
+.cont-ef {
+	color: #B38633;
+	font-weight: bold;
+    text-align: center;
+}
+.cont-ed {
+    font-size: 16px;
+    text-align: center;
+}
+.col-md-3 {
+    width: 19%;
+}
+  </style>
+	</head>
+	<body onload="loand()">
+		<div class="col-md-12" style="padding: 0;">
+		    <!--导航-->
+		    <!--导航-->
+		    <nav class="navbar navbar-default" role="navigation" style="background: rgb(47,54,60);border: none;border-radius: 0">
+		        <div class="container">
+		            <div class="navbar-header">
+		                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#example-navbar-collapse" style="border:0 solid rgba(0,0,0,0) ">
+		                    <span class="sr-only">切换导航</span>
+		                    <span style="background-color: white" class="icon-bar"></span>
+		                    <span style="background-color: white" class="icon-bar"></span>
+		                    <span style="background-color: white" class="icon-bar"></span>
+		                </button>
+		                <a class="navbar-brand" href="#" style="color:white">天津和平金融界中心（汇金中心）</a>
+		            </div>
+		            <div class="collapse navbar-collapse" id="example-navbar-collapse">
+		                <ul class="nav navbar-nav" style="margin-left:3%; ">
+		                    <li><a href="javascript:;" class="a1 a0" style="color:white">关于我们</a></li>
+		                    <li><a href="javascript:;" class="a2 a0" style="color:white">出租房源</a></li>
+		                    <li><a href="javascript:;" class="a3 a0" style="color:white">楼盘概述</a></li>
+		                    <li><a href="javascript:;" class="a4 a0" style="color:white">楼盘相册</a></li>
+		                    <li><a href="javascript:;" class="a5 a0" style="color:white">入驻企业</a></li>
+		                    <li><a href="javascript:;" class="a6 a0" style="color:white">交通地图</a></li>
+		                </ul>
+		                <script>
+		                    $('.a0').bind('mousemove',function () {
+		                        $(this).css({color:'rgb(19,138,203)'});
+		                    })
+		                    $('.a0').bind('mouseout',function () {
+		                        $(this).css({color:'#ffffff'});
+		                    })
+		                </script>
+		                <div class="dian_hua" style="float: right;color:white;padding-top: 15px;padding-bottom: 15px;">租赁中心：17822192757</div>
+		            </div>
+		        </div>
+		    </nav>
+		</div>
+
+		<!-- 轮播图 -->
+		<div class="Lun-body">
+			<div id="z_swiper_con">
+				<div class="swiper-container">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide"><img src="../img/022ab167c114f6ed2076e6b27107537.jpg"width="890px"height="430px" ></div>
+						<div class="swiper-slide"><img src="../img/d7b40907463663d25e5c079aca574fb.jpg"width="890px"height="430px" ></div>
+						<div class="swiper-slide"><img src="../d7b40907463663d25e5c079aca574fb.jpg"width="890px"height="430px" ></div>
+						<div class="swiper-slide"><img src="../img/0d19029d7bcf61fe66d6b6c4543d37c.jpg"width="890px"height="430px" ></div>
+						<div class="swiper-slide"><img src="../img/51609bdab1c3bef2735ee4291d227ca.jpg"width="890px"height="430px" ></div>
+						<div class="swiper-slide"><img src="../img/022ab167c114f6ed2076e6b27107537.jpg"width="890px"height="430px" ></div>
+						<div class="swiper-slide"><img src="../img/022ab167c114f6ed2076e6b27107537.jpg"width="890px"height="430px" ></div>
+						<div class="swiper-slide"><img src="../img/022ab167c114f6ed2076e6b27107537.jpg"width="890px"height="430px" ></div>
+						<div class="swiper-slide"><img src="../img/022ab167c114f6ed2076e6b27107537.jpg"width="890px"height="430px" ></div>
+						<div class="swiper-slide"><img src="../img/022ab167c114f6ed2076e6b27107537.jpg"width="890px"height="430px" ></div>
+					</div>
+					<!-- Add Pagination -->
+					<div class="swiper-pagination"></div>
+					<!-- 左右点击按钮 -->
+					<div class="swiper-button-next"></div>
+					<div class="swiper-button-prev"></div>
+				</div>
+			</div>
+			<div class="Lun-body-txt">
+				<p id="txt1">汇金中心</p>
+				<p id="txt-2"><span id="txt2">
+						2.8—4.0
+					</span>元/m²/天
+				</p>
+				<p id="txt3">
+					<span>
+						12
+					</span>
+					<span>
+						-
+					</span>
+				</p>
+				<p id="txt-1">
+					<span id="txt5">
+						在租房源
+					</span>
+					<span id="txt6">
+						可租面积
+					</span>
+				</p>
+				<p id="txt7">
+					地址：和平区和平路地铁站汇金中心
+				</p>
+				<p id="txt8">
+					距离地铁：3号线和平路
+				</p>
+				<p id="txt9">
+					距离 3号线和平路 约100米
+				</p>
+				<p>
+					<span id="txt10">
+						<i class="glyphicon glyphicon-earphone"></i>
+						咨询电话17822192757
+					</span>
+				</p>
+			</div>
+		</div>
+		<div class="cont-e col-xs-12 col-md-3" style="">
+		            <div class="cont-ef">
+		              <span style="font-size: 1.5vw;display: inline-block;padding: 4px 0; 
+					  display: block;margin-bottom: 10px;">租赁热线</span>
+		                17822192757          </div>
+		            <hr style="border-top:1px solid #cccccc ">
+		            <div class="cont-et" style="text-align: center;margin: 10% 0">
+		                <span class="qrcode"><img src="../img/下载.png" width="250" height="250"> </span>
+		            </div>
+		            <div class="cont-ed" style="font-size: 12px">
+		                扫描二维码，用手机查看
+		            </div>
+		        </div>
+		<div class="Loupan-txt">
+			<div class="Loupan-txt-1">
+				
+				<p id="Loupan-txt-2">汇金中心出租面积及价格</p>
+				
+				<ul id="myTab" class="nav nav-tabs">
+					<p id="shijian_1">更新时间:2020-5-22日</p>
+					<p id="heiti">
+						<span>面积</span>
+						<span>日租金</span>
+						<span>月租金</span>
+					</p>
+					<p >
+						<span>110平米</span>
+						<span>2.8元/天</span>
+						<span>10000/月</span>
+					</p>
+					<p >
+						<span>150平米</span>
+						<span>2.8元/天</span>
+						<span>12600/月</span>
+					</p>
+					<p >
+						<span>190平米</span>
+						<span>2.8元/天</span>
+						<span>15960/月</span>
+					</p>
+					<p >
+					    <span>270平米</span>
+						<span>2.8元/天</span>
+						<span>22680/月</span>
+					</p>
+					<p >
+						<span>350平米</span>
+						<span>2.8元/天</span>
+						<span>29400/月</span>
+					</p>
+					<p >
+						<span>500平米</span>
+						<span>2.8元/天</span>
+						<span>42000/月</span>
+					</p>
+					<p >
+						<span>554平米</span>
+						<span>2.8元/天</span>
+						<span>46536/月</span>
+					</p>
+					<p >
+						<span>798平米</span>
+						<span>2.8元/天</span>
+						<span>67032/月</span>
+					</p>
+					<p >
+						<span>900平米</span>
+						<span>2.8元/天</span>
+						<span>75600/月</span>
+					</p>
+					<p >
+						<span>1000平米</span>
+						<span>2.8元/天</span>
+						<span>84000/月</span>
+					</p>
+					
+				</ul>
+				</p>
+			
+			</div>
+			
+			<div class="Loupan-txt-3">
+				<p id="Loupan-txt-2">汇金中心楼盘介绍</p>
+				<p id="txt-3">
+					<span>
+<p> 天津金融街(和平)中心，位于和平心，海河畔，毗邻天津第一高楼环球金融中心，是极为稀缺的水岸摩天地标建筑。津湾广场、恒隆广场、滨江道步行街、瑞吉酒店等，共筑顶级繁华城邦；
+地铁3号线和建设中的地铁4号线在此交汇，步行5分钟即达；对望天津站，30分钟直通首都、对接滨海国际机场。全面建成后，将成为集摩天地标、企业总部定制、超甲级智能办公、高端居住、
+商业中心为一体的全功能城市综合体，代言和平区的崭新地标。金融街控股凭借成功运作多个商务地产项目的成功经验，成功的将津塔姐妹篇——金融街和平中心缔造成为现代化、生态化、
+智能化的超甲级5A写字楼。作为津塔二期，项目除继承了津塔设计中的亮点外，继续大胆创新。写字楼3-10层为总部级企业提供专属办公空间，独享10米挑高大堂，3部专属高速电梯，
+避免了上下班高峰的拥挤及喧扰。独特的LOFT灵动规划，可根据不同企业的办公需求自主定制办公空间。项目在顶层与次顶层采用云顶行政会所设计，次顶层建筑层高4.75米
+，顶层建筑层高4.85米，极致挑高俯瞰一城繁华。预留安装延时空调条件，企业可根据实际需要自由控制空调开关，降低8小时之外的办公成本。津塔二期写字楼目前推出90—2000㎡准
+现房面向全球公开发售，摩天级品质，津塔之后再擎峰。
+</p>
+
+<p>楼盘参数：</p>
+
+<p> 开发商：金融街融展（天津）置业有限公司</p>
+
+<p> 地址：和平大沽北路与滨江道交口</p>
+
+<p> 物业公司：北京金融街第一太平戴维斯物业管理有限公司天津分公司</p>
+
+<p> 物业费：25.52元/平米*月</p>
+
+<p> 总楼层数：46层</p>
+
+<p> 总建筑面积：210500平方米</p>
+
+<p> 标准层高：3.9米</p>
+
+<p> 车位数量：425个</p>
+
+<p> 车位租金：900元/辆*月</p>
+
+<p> 电梯品牌：三菱电梯</p>
+
+<p> 电梯数量：19部</p>
+
+<p> 空调类型：双管制中央空调系统</p>
+
+<p> 网络配置：移动 联通 电信</p>
+
+<p> 建筑年代：2015</p>
+
+<p> 周边配套：</p>
+
+<p> 酒店：香格里拉大酒店、丽斯卡尔顿酒店、南苑e家酒店、汉庭酒店、格林豪泰酒店、海友酒店、
+
+商场：恒隆广场、天河城购物中心、天津嘉里汇、和平大悦城、劝业场商场、友谊新天地广场
+
+银行：北京银行、中国银行、工商银行、天津银行、交通银行、建设银行</p>
+
+<p> 交通状况：</p>
+
+<p> 公交：口腔医院（1路区间、50、92、96、185、186、189、190、605）中心公园（9、37、92、93、185、611、629、826、827、828、830、831、837、838、851</p></span>
+				</p>
+
+				</p>
+			</div>
+			<div class="Loupan-txt-con3">
+				<p id="Loupan-txt-2">光明大厦楼盘参数 </p>
+				<p id="txt-4">
+					<span>层高</span>
+					<span>层数</span>
+					<span>电梯</span>
+				</p>
+				<p id="txt-5">
+					<span>3.9M</span>
+					<span>46L</span>
+					<span>10</span>
+				</p>
+				<p id="txt-6">
+					<span>车位费</span>
+					<span>得房率</span>
+					<span>物业费</span>
+				</p>
+				<p id="txt-7">
+					<span>900/月</span>
+					<span>68%</span>
+					<span>28/月</span>
+				</p>
+			</div>
+
+			<!-- 百度地图 -->
+			<div id="bdd" style="width:95%;margin: 0 auto;">
+				<div id="container" style="width: 100%; height:50.25rem;">
+				</div>
+				<input id="lng" type="hidden" runat="server" />
+				<input id="lat" type="hidden" runat="server" />
+			</div>
+			<div id="yewei_1">
+				    <p style="text-align:center">租 赁 中 心</p>
+					<p style="text-align:center" >租赁电话 17822192757</p>
+					<p style="text-align:center">本站为写字楼选址网，非物业及开发商，内容仅供参考，如有错误内容感谢您及时联系我们，谢谢!</p>
+			
+				
+			</div>
+		</div>
+		
+		<!-- 楼盘情况 -->
+
+
+
+		<!-- Swiper JS -->
+		<script src="../js/jquery-1.11.3.min.js" type="text/javascript"></script>
+		<script src="../bootstrap/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+
+		<script type="text/javascript" src="http://api.map.baidu.com/api?v=1.3"></script>
+		<!-- <script type="text/javascript" src="http://api.map.baidu.com/api?v=1.0&type=webgl&ak=CCgGwQSPxLmQbIkAEAIb9RLBGXKhr2KH"> -->
+		<script src="../js/swiper.min.js"></script>
+
+		<!-- Initialize Swiper -->
+		<script>
+			function loand() {
+				var map = new BMap.Map("container");
+				var point = new BMap.Point(117.211905, 39.138148); //默认中心点
+				var marker = new BMap.Marker(point);
+				var opts = {
+					width: 100, // 信息窗口宽度 
+					
+					
+					height: 50, // 信息窗口高度 
+					title: "汇金中心" // 信息窗口标题 
+				}
+				var infoWindow = new BMap.InfoWindow("", opts); // 创建信息窗口对象
+				map.addControl(new BMap.NavigationControl()); //左上角控件
+				map.enableScrollWheelZoom(); //滚动放大
+				map.enableKeyboard(); //键盘放大
+				map.centerAndZoom(point, 13); //绘制地图
+				map.addOverlay(marker); //标记地图
+				map.openInfoWindow(infoWindow, map.getCenter()); // 打开信息窗口  
+			}
+			var swiper = new Swiper('.swiper-container', {
+				spaceBetween: 30,
+				pagination: {
+					el: '.swiper-pagination',
+					clickable: true,
+				},
+				navigation: {
+					nextEl: '.swiper-button-next',
+					prevEl: '.swiper-button-prev',
+				},
+			});
+		</script>
+	</body>
+</html>
